@@ -13,8 +13,6 @@ public class Stock {
 
   @PrimaryKey
   @Persistent(valueStrategy = IdGeneratorStrategy.IDENTITY)
-  private Long id;
-  @Persistent
   private User user;
   @Persistent
   private String symbol;
@@ -30,11 +28,6 @@ public class Stock {
     this.user = user;
     this.symbol = symbol;
   }
-
-  public Long getId() {
-    return this.id;
-  }
-
   public User getUser() {
     return this.user;
   }
