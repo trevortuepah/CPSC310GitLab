@@ -20,6 +20,8 @@ public class Stock {
   private String symbol;
   @Persistent
   private Date createDate;
+  @Persistent
+  private int mergeConflict;
 
   public Stock() {
     this.createDate = new Date();
@@ -29,6 +31,7 @@ public class Stock {
     this();
     this.user = user;
     this.symbol = symbol;
+    this.mergeConflict = 123456;
   }
 
   public Long getId() {
