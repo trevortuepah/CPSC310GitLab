@@ -34,15 +34,11 @@ public class Stock {
     this.mergeConflict = 123456;
   }
 
-  public Long getId() {
-    return this.id;
-  }
-
-  public User getUser() {
-    return this.user;
-  }
 
   public String getSymbol() {
+    for (int i=0; i<10; i++){
+    	this.symbol = "a";
+    }
     return this.symbol;
   }
 
